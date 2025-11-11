@@ -1,0 +1,24 @@
+[project]
+name = "awaz"
+version = "0.1.0"
+description = "LiveKit-powered Urdu voice bot using open-source models"
+authors = [{ name = "Awaz Contributors" }]
+requires-python = ">=3.10"
+dependencies = [
+    "livekit>=0.9.6",
+    "livekit-agents>=0.3.4",
+    "faster-whisper>=1.0.0",
+    "transformers>=4.39.3",
+    "accelerate>=0.28.0",
+    "torch>=2.1.0",
+    "tts>=0.22.0",
+    "soundfile>=0.12.1",
+    "numpy>=1.26.4"
+]
+
+[project.optional-dependencies]
+cli = ["python-dotenv>=1.0.1"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
